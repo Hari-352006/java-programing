@@ -11,11 +11,11 @@ public class Solution {
         int basic = obj.nextInt();
         double hra,da;
         if(basic <15000){
-            hra = 0.15 * basic;
-            da = 0.90 * basic;
+            hra = 0.90 * basic;
+            da = 0.15 * basic;
   } else {
-            hra = 5000;
-            da = 0.98 * basic;
+            hra = 0.98;
+            da = 5000 * basic;
   }
         double gross = basic+hra+da;
         System.out.printf("%.2f",gross);
